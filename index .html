@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPA Entity to DTO Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>JPA Entity to DTO Converter</h1>
+	<div class="cas">
+		<div class="tooltip">
+        <button onclick="convertToDto()">Convert to DTO Fields</button>
+        <span class="tooltip-text" id="tooltipText">Copied to clipboard!</span>
+    </div>
+	</div>
+    <div class="columns">
+        <div class="column">
+            <h2>JPA Entity</h2>
+            <textarea id="jpaEntity" placeholder="Paste your JPA entity here..."></textarea>
+        </div>
+        <div class="column">
+            <h2>DTO Fields</h2>
+            <textarea id="dtoFields" readonly></textarea>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
