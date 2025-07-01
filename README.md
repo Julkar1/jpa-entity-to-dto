@@ -24,6 +24,48 @@ A web-based tool that automatically converts JPA entity classes into flattened D
 3. **Get** perfectly formatted DTO fields
 4. **Copy** with one click to use in your project
 
+Hosting: Vercel
+
+Version Control: GitHub
+
+Installation
+No installation needed! Just use the live demo link above.
+
+For local development:
+
+Clone this repository
+
+Open index.html in any modern browser
+
+
+## Why This Tool?
+Saves time converting complex JPA entities to DTOs
+
+Eliminates manual errors in field mapping
+
+Standardizes DTO structure across your project
+
+Free and open-source alternative to paid tools
+
+## Contributing
+Contributions are welcome! Please:
+
+Fork the repository
+
+Create your feature branch
+
+Commit your changes
+
+Push to the branch
+
+Open a pull request
+
+## License
+This project is Free to use.
+
+## Support
+If you find this tool useful, please consider giving it a ⭐ on GitHub!
+
 ### Conversion Example
 
 **Input (JPA Entity):**
