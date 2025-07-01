@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPA Entity to DTO Converter</title>
+    <!--    <link rel="stylesheet" href="style.css">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .columns {
+            display: flex;
+            gap: 20px;
+        }
+        .cas{
+            text-align: center;
+        }
+        .column {
+            flex: 1;
+        }
+        textarea {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre;
+            overflow-wrap: normal;
+            overflow-x: scroll;
+        }
+        button {
+            background-color: #4855ef;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin: 20px auto;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>JPA Entity to DTO Converter</h1>
+	<div class="cas">
+		<div class="tooltip">
+        <button onclick="convertToDto()">Convert to DTO Fields</button>
+        <span class="tooltip-text" id="tooltipText">Copied to clipboard!</span>
+    </div>
+	</div>
+    <div class="columns">
+        <div class="column">
+            <h2>JPA Entity</h2>
+            <textarea id="jpaEntity" placeholder="Paste your JPA entity here..."></textarea>
+        </div>
+        <div class="column">
+            <h2>DTO Fields</h2>
+            <textarea id="dtoFields" readonly></textarea>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
