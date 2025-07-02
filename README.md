@@ -2,7 +2,8 @@
 
 A web-based tool that automatically converts JPA entity classes into flattened DTO (Data Transfer Object) structures with proper field mappings.
 
-🔗 **Live Demo**:
+🔗 **Live Demo**: [https://jpa-entity-to-dto.vercel.app/](https://jpa-entity-to-dto.vercel.app/)
+
 
 ![image](https://github.com/user-attachments/assets/05f82553-6b06-4acd-a7b5-6ffc1533a4a0)
 
